@@ -12,9 +12,9 @@ namespace BonFromage.Pages.Menu
 {
     public class EditModel : PageModel
     {
-        private readonly BonFromageContext _context;
+        private readonly BonFromage.Data.BonFromageContext _context;
 
-        public EditModel(BonFromageContext context)
+        public EditModel(BonFromage.Data.BonFromageContext context)
         {
             _context = context;
         }

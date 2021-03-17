@@ -11,9 +11,9 @@ namespace BonFromage.Pages.Menu
 {
     public class CreateModel : PageModel
     {
-        private readonly BonFromageContext _context;
+        private readonly BonFromage.Data.BonFromageContext _context;
 
-        public CreateModel(BonFromageContext context)
+        public CreateModel(BonFromage.Data.BonFromageContext context)
         {
             _context = context;
         }

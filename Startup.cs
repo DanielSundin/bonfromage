@@ -26,8 +26,8 @@ namespace BonFromage
         {
             services.AddRazorPages();
 
-            services.AddDbContext<BonFromageContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("BonFromageContext")));
+            services.AddDbContext<BonFromage.Data.BonFromageContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("BonFromageContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

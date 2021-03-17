@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using BonFromage.Models;
 
+namespace BonFromage.Data
+{
     public class BonFromageContext : DbContext
     {
         public BonFromageContext (DbContextOptions<BonFromageContext> options)
@@ -14,3 +16,4 @@ using BonFromage.Models;
 
         public DbSet<BonFromage.Models.MenuItem> MenuItem { get; set; }
     }
+}

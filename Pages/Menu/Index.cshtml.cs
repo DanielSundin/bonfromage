@@ -11,9 +11,9 @@ namespace BonFromage.Pages.Menu
 {
     public class IndexModel : PageModel
     {
-        private readonly BonFromageContext _context;
+        private readonly BonFromage.Data.BonFromageContext _context;
 
-        public IndexModel(BonFromageContext context)
+        public IndexModel(BonFromage.Data.BonFromageContext context)
         {
             _context = context;
         }

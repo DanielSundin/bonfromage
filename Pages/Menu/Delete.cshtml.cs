@@ -11,9 +11,9 @@ namespace BonFromage.Pages.Menu
 {
     public class DeleteModel : PageModel
     {
-        private readonly BonFromageContext _context;
+        private readonly BonFromage.Data.BonFromageContext _context;
 
-        public DeleteModel(BonFromageContext context)
+        public DeleteModel(BonFromage.Data.BonFromageContext context)
         {
             _context = context;
         }
